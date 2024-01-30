@@ -31,7 +31,31 @@ const finalMessagePar = document.getElementById('final-message');
 const playAgainButton = document.getElementById('play-again');
 
 
-// console.log(selectionArticle)
+//& audio
+
+const audio = document.querySelector('.audio')
+const playSound = document.querySelector('.playSound')
+const mute = document.querySelector('.mute')
+const button1 = document.querySelector('.button1')
+const button2 = document.querySelector('.button2')
+button1.style.display = "none"
+audio.play();
+audio.volume = 0.1
+
+
+playSound.onclick = () => {
+    button1.style.display = "none"
+    button2.style.display = "block"
+    audio.pause()
+
+}
+
+mute.onclick = () => {
+    button2.style.display = "none"
+    button1.style.display = "block"
+    audio.play()
+}
+
 
 
 //& Event listeners
@@ -180,5 +204,6 @@ domTopScore.addEventListener('dblclick', () => {
 
     }
 })
+
 
 
