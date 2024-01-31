@@ -39,7 +39,7 @@ const mute = document.querySelector('.mute')
 const button1 = document.querySelector('.button1')
 const button2 = document.querySelector('.button2')
 button1.style.display = "none"
-// audio.volume = 1
+audio.volume = 0.1
 
 
 
