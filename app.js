@@ -39,22 +39,33 @@ const mute = document.querySelector('.mute')
 const button1 = document.querySelector('.button1')
 const button2 = document.querySelector('.button2')
 button1.style.display = "none"
-audio.play();
-audio.volume = 1
+// audio.volume = 1
 
+
+
+window.onload = () => {
+    button1.style.display = "none"
+    button2.style.display = "block"
+    audio.pause()
+
+    
+}
 
 playSound.onclick = () => {
     button1.style.display = "none"
     button2.style.display = "block"
     audio.pause()
+    
 
 }
+
 
 mute.onclick = () => {
     button2.style.display = "none"
     button1.style.display = "block"
     audio.play()
 }
+
 
 
 
@@ -78,8 +89,30 @@ selectionArticle.addEventListener('click', (e) => {
 
 playAgainButton.addEventListener('click', () => {
     window.location.reload()
+   
+
 })
 
+// window.onload = function () {
+
+//     // Sayfa yenilendiğinde müziği devam ettir
+//     audio.play();
+
+//     // Button 1'i göster, Button 2'yi gizle
+//     showButton1()
+//     hideButton2()
+// };
+
+// // Button 1'i gösteren fonksiyon
+// function showButton1() {
+//     button1.style.display = "none";
+// }
+
+// // Button 2'yi gizleyen fonksiyon
+// function hideButton1() {
+
+//     button2.style.display = "block";
+// }
 //& Functions
 
 const createPcSelection = () => {
@@ -153,8 +186,9 @@ const openModal = () => {
         document.querySelector('.modal').style.backgroundColor = GREEN
         updateTopScore()
 
-    }
+    } 
 }
+
 
 
 //! Local storage kullanımı
