@@ -40,7 +40,7 @@ const button1 = document.querySelector('.button1')
 const button2 = document.querySelector('.button2')
 button1.style.display = "none"
 audio.play();
-audio.volume = 0.1
+audio.volume = 1
 
 
 playSound.onclick = () => {
@@ -55,6 +55,7 @@ mute.onclick = () => {
     button1.style.display = "block"
     audio.play()
 }
+
 
 
 
