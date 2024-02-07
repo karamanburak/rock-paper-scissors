@@ -12,4 +12,4 @@ You can choose between rock, paper or scissors. The computer will make a random 
 
 <!--  -->
 
-![App Screeshot](./assets/Screenshot%202024-01-30%20134344.png)
+![Rock-Paper-Scissors](./assets/rock-paper-scissors.gif)
