@@ -58,7 +58,7 @@ section.score-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 3px 3px 1250px 1px;
+  box-shadow: 3px 3px 80px 1px;
   color: var(--grey);
   border-radius: 5px;
   padding: 0.5rem;
